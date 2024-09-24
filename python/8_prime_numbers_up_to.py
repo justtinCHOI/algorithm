@@ -1,4 +1,4 @@
-def solutoin(number: int) -> list:
+def solution(number: int) -> list:
     primes = [True] * (number + 1)
 
     for i in range(2, number):
@@ -8,4 +8,4 @@ def solutoin(number: int) -> list:
 
     return [i for i in range(2, number + 1) if primes[i]]
 
-print(solutoin(10))
+print(solution(10))
