@@ -1,8 +1,21 @@
 # ninja log v6
-2	236	7488681892616726	build.ninja	b3aabdee56e9aead
+2	236	7489338981190648	build.ninja	b3aabdee56e9aead
 2	138	7488674143727575	CMakeFiles/cAlgorithm.dir/main.c.obj	e1bc5d9a24722902
-95	215	7488680282192440	cAlgorithm.exe	d9875bf2fe082c62
+205	461	7488682390272987	cAlgorithm.exe	a05e84595e2336f2
 2	97	7488675107400610	CMakeFiles/cAlgorithm.dir/2_find_consecutive_sum_ways.c.obj	c2bc2c47c716fcc1
 4	95	7488680281277273	CMakeFiles/cAlgorithm.dir/4_delete_element.c.obj	ee0ebe0a1293aa4d
 4	203	7488682388262496	CMakeFiles/cAlgorithm.dir/3_dice_roll_summary.c.obj	86e942251aa6bc14
-205	461	7488682390272987	cAlgorithm.exe	a05e84595e2336f2
+4	339	7489339842565340	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
+340	842	7489339845924891	cAlgorithm.exe	1c9219388de2e753
+3	107	7489342103437601	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
+107	249	7489342104470828	cAlgorithm.exe	1c9219388de2e753
+3	103	7489343610782679	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
+103	267	7489343611782375	cAlgorithm.exe	1c9219388de2e753
+4	155	7489344555632752	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
+155	360	7489344557148205	cAlgorithm.exe	1c9219388de2e753
+4	113	7489346405393056	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
+113	307	7489346406487528	cAlgorithm.exe	1c9219388de2e753
+3	100	7489346506098841	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
+100	223	7489346507060552	cAlgorithm.exe	1c9219388de2e753
+3	106	7489346800465600	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
+106	268	7489346801494734	cAlgorithm.exe	1c9219388de2e753
