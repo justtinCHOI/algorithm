@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.family'] = 'Malgun Gothic'  # Windows에서는 'Malgun Gothic' 사용
 plt.rcParams['axes.unicode_minus'] = False  # 마이너스 기호 깨짐 방지
 
+# Random seed 설정 (데이터 재현성 확보)
+random.seed(42)
+
 # 경로 설정
 output_dir = 'gradeManagement_files'
 if not os.path.exists(output_dir):
@@ -34,55 +37,50 @@ df_students = pd.DataFrame(students)
 def generate_scores():
     return [random.randint(70, 100) if random.random() > 0.05 else None for _ in range(len(df_students))]
 
-# 파일이 존재하는지 확인하고, 없으면 생성하는 함수
-def create_file_if_not_exists(file_key, df):
-    if not os.path.exists(files[file_key]):
+# 파일을 읽어오거나, 없을 경우 파일을 생성하는 함수
+def load_or_create_file(file_key, df):
+    if os.path.exists(files[file_key]):
+        print(f"{files[file_key]} 파일이 이미 존재합니다. 데이터를 불러옵니다.")
+        return pd.read_csv(files[file_key], dtype={'학번': str})
+    else:
         df.to_csv(files[file_key], index=False)
         print(f"{files[file_key]} 파일이 생성되었습니다.")
-    else:
-        print(f"{files[file_key]} 파일이 이미 존재합니다.")
+        return df
 
-# 1. 학생 파일 생성 : students.csv 생성
-create_file_if_not_exists('students', df_students)
+# 1. 학생 파일 생성 또는 로드 : students.csv
+df_students = load_or_create_file('students', df_students)
 
-# 2. 중간고사 파일 생성 : midterm.csv 생성
+# 2. 중간고사 파일 생성 또는 로드 : midterm.csv
 df_midterm = pd.DataFrame({'학번': df_students['학번'], '중간고사': generate_scores()})
-create_file_if_not_exists('midterm', df_midterm)
+df_midterm = load_or_create_file('midterm', df_midterm)
 
-# 3. 기말고사 파일 생성 : final.csv 생성
+# 3. 기말고사 파일 생성 또는 로드 : final.csv
 df_final = pd.DataFrame({'학번': df_students['학번'], '기말고사': generate_scores()})
-create_file_if_not_exists('final', df_final)
+df_final = load_or_create_file('final', df_final)
 
-# 4. 과제 파일 생성 : assignment1.csv ~ assignment4.csv 생성
+# 4. 과제 파일 생성 또는 로드 : assignment1.csv ~ assignment4.csv
+assignments = []
 for i in range(1, 5):
     df_assignment = pd.DataFrame({'학번': df_students['학번'], f'과제{i}': generate_scores()})
-    create_file_if_not_exists(f'assignment{i}', df_assignment)
+    assignments.append(load_or_create_file(f'assignment{i}', df_assignment))
 
-# 5. 출석 파일 생성 : attendance.csv
-df_attendance = pd.DataFrame({'학번': df_students['학번'], '출석': [random.randint(50, 100) for _ in range(len(df_students))]})
-create_file_if_not_exists('attendance', df_attendance)
+# 5. 출석 파일 생성 또는 로드 : attendance.csv
+df_attendance = pd.DataFrame({'학번': df_students['학번'], '출석': [random.randint(70, 100) for _ in range(len(df_students))]})
+df_attendance = load_or_create_file('attendance', df_attendance)
 
-print("모든 파일 확인 및 생성 작업이 완료되었습니다.")
-
-# 생성된 파일들을 읽어서 데이터프레임으로 로드 (학번을 문자열로 명시적으로 지정)
-df_midterm = pd.read_csv(files['midterm'], dtype={'학번': str})
-df_final = pd.read_csv(files['final'], dtype={'학번': str})
-df_attendance = pd.read_csv(files['attendance'], dtype={'학번': str})
-assignments = [pd.read_csv(files[f'assignment{i}'], dtype={'학번': str}) for i in range(1, 5)]
+print("모든 파일 확인 및 로드 또는 생성 작업이 완료되었습니다.")
 
 # 성적 데이터 병합 (학번 기준)
 df_grades = df_students.merge(df_midterm, on='학번', how='left')\
                        .merge(df_final, on='학번', how='left')\
                        .merge(df_attendance, on='학번', how='left')
-print(df_grades[['학번', '중간고사', '기말고사', '출석']])
 
 # 과제 성적 병합
 for i, assignment in enumerate(assignments, 1):
     df_grades = df_grades.merge(assignment, on='학번', how='left')
-print(df_grades[['학번', '과제1', '과제2', '과제3', '과제4']])
 
-# 결측값(미입력 성적)은 0으로 채움
-df_grades.fillna(0, inplace=True)
+# 결측값(미입력 성적)은 None으로 유지
+df_grades.fillna({'중간고사': 0, '기말고사': 0, '출석': 0, '과제1': 0, '과제2': 0, '과제3': 0, '과제4': 0}, inplace=True)
 
 # 최종 성적 계산
 df_grades['최종성적'] = (df_grades['중간고사'] * 0.3 +
