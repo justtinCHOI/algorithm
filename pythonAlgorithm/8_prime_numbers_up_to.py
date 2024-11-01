@@ -1,4 +1,4 @@
-def solution(number: int) -> list:
+def solution(number):
     primes = [True] * (number + 1)
 
     for i in range(2, number):

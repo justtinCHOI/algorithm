@@ -11,5 +11,4 @@ int main(void)
     get(3.14, &i_p, &f_p);
     printf("The value is %d %1f\n", i_p, f_p);
     return 0;
-
 }
