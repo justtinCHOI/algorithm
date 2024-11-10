@@ -39,8 +39,6 @@ print("\n결측치 정보:\n", titanic.isnull().sum())
 # plt.ylabel("생존율")
 # plt.show()
 
-
-
 # 타이타닉 데이터셋 불러오기
 titanic = sns.load_dataset('titanic')
 
