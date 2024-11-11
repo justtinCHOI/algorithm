@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/algorithm/cAlgorithm/cmake-build-debug/
 
 build cmake_object_order_depends_target_cAlgorithm: phony || .
 
-build CMakeFiles/cAlgorithm.dir/0_for_testing.c.obj: C_COMPILER__cAlgorithm_unscanned_Debug D$:/algorithm/cAlgorithm/0_for_testing.c || cmake_object_order_depends_target_cAlgorithm
-  DEP_FILE = CMakeFiles\cAlgorithm.dir\0_for_testing.c.obj.d
+build CMakeFiles/cAlgorithm.dir/13_employee_struct.c.obj: C_COMPILER__cAlgorithm_unscanned_Debug D$:/algorithm/cAlgorithm/13_employee_struct.c || cmake_object_order_depends_target_cAlgorithm
+  DEP_FILE = CMakeFiles\cAlgorithm.dir\13_employee_struct.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -finput-charset=UTF-8 -fexec-charset=UTF-8
   OBJECT_DIR = CMakeFiles\cAlgorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\cAlgorithm.dir
@@ -63,7 +63,7 @@ build CMakeFiles/cAlgorithm.dir/0_for_testing.c.obj: C_COMPILER__cAlgorithm_unsc
 #############################################
 # Link the executable cAlgorithm.exe
 
-build cAlgorithm.exe: C_EXECUTABLE_LINKER__cAlgorithm_Debug CMakeFiles/cAlgorithm.dir/0_for_testing.c.obj
+build cAlgorithm.exe: C_EXECUTABLE_LINKER__cAlgorithm_Debug CMakeFiles/cAlgorithm.dir/13_employee_struct.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cAlgorithm.dir

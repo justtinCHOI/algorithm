@@ -7,7 +7,7 @@ set(CMAKE_C_STANDARD 17)
 add_compile_options(-finput-charset=UTF-8 -fexec-charset=UTF-8)
 
 add_executable(cAlgorithm
-        0_for_testing.c
+#        0_for_testing.c
 #        1_main.c
 #        2_find_consecutive_sum_ways.c
 #        3_dice_roll_summary.c
@@ -20,4 +20,6 @@ add_executable(cAlgorithm
 #        10_is_strong_password.c
 #        11_trim_left.c
 #        12_is_palindrome.c
+        13_employee_struct.c
+#        14_product_managing.c
 )

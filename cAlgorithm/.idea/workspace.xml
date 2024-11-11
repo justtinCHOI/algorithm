@@ -3,6 +3,12 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Environment/StickyLines/Enabled/@EntryValue" value="false" type="bool" />
+  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -24,23 +30,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c79576a-949f-464b-8d38-dc3501fe03c0" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/0_for_testing.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_employee_struct.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_product_managing.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_is_strong_password.c" beforeDir="false" afterPath="$PROJECT_DIR$/10_is_strong_password.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_trim_left.c" beforeDir="false" afterPath="$PROJECT_DIR$/11_trim_left.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_remove_extra_spaces.c" beforeDir="false" afterPath="$PROJECT_DIR$/8_remove_extra_spaces.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_remove_vowels.c" beforeDir="false" afterPath="$PROJECT_DIR$/9_remove_vowels.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-6fda3366b0fe1f5174a0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-10-22T08-13-34-0568.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cAlgorithm-Debug-4f98dad67aba7db96770.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cAlgorithm.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cAlgorithm.exe" afterDir="false" />
@@ -58,10 +55,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/0_for_testing.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/0_for_testing.c" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/10_is_strong_password.c" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/11_trim_left.c" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/12_is_palindrome.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/13_employee_struct.c" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/14_product_managing.c" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/1_main.c" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/3_dice_roll_summary.c" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/4_delete_element.c" root0="FORCE_HIGHLIGHTING" />
@@ -114,6 +113,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="cAlgorithm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cAlgorithm" TARGET_NAME="cAlgorithm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cAlgorithm" RUN_TARGET_NAME="cAlgorithm">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -142,6 +146,9 @@
       <workItem from="1730697991199" duration="4000" />
       <workItem from="1730698436675" duration="8614000" />
       <workItem from="1730790567715" duration="1416000" />
+      <workItem from="1731309109719" duration="3000" />
+      <workItem from="1731331098377" duration="439000" />
+      <workItem from="1731332230370" duration="675000" />
     </task>
     <servers />
   </component>
