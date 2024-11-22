@@ -1,9 +1,9 @@
 # ninja log v6
 22	523	7513684225852835	CMakeFiles/cAlgorithm.dir/7_prepare_midterm_exam.c.obj	2d38648b1d637645
-5	362	7530361045492908	build.ninja	b3aabdee56e9aead
+2	267	7533737161440940	build.ninja	b3aabdee56e9aead
 2	138	7488674143727575	CMakeFiles/cAlgorithm.dir/main.c.obj	e1bc5d9a24722902
 3	106	7489346800465600	CMakeFiles/cAlgorithm.dir/1_main.c.obj	b9ba2bbd86d0ef08
-103	252	7530357985159515	cAlgorithm.exe	996d63e43bde5794
+129	283	7530361047224065	cAlgorithm.exe	48e06c953f787418
 3	102	7530357984151432	CMakeFiles/cAlgorithm.dir/14_product_managing.c.obj	349f060ebb8823f2
 2	97	7488675107400610	CMakeFiles/cAlgorithm.dir/2_find_consecutive_sum_ways.c.obj	c2bc2c47c716fcc1
 4	95	7488680281277273	CMakeFiles/cAlgorithm.dir/4_delete_element.c.obj	ee0ebe0a1293aa4d
@@ -14,7 +14,4 @@
 4	98	7524071029032723	CMakeFiles/cAlgorithm.dir/10_is_strong_password.c.obj	be8ee6bc2a436f67
 4	96	7524084168186365	CMakeFiles/cAlgorithm.dir/11_trim_left.c.obj	4cf88298cf976c8
 2	92	7524091602008783	CMakeFiles/cAlgorithm.dir/12_is_palindrome.c.obj	4cfec2bbae0d6690
-3	237	7530357161973977	CMakeFiles/cAlgorithm.dir/13_employee_struct.c.obj	c1cf0f55eaa6de16
-2	267	7530361045492908	build.ninja	b3aabdee56e9aead
 3	129	7530361045962912	CMakeFiles/cAlgorithm.dir/13_employee_struct.c.obj	c1cf0f55eaa6de16
-129	283	7530361047224065	cAlgorithm.exe	48e06c953f787418
